@@ -36,6 +36,12 @@ ul {
   text-transform: uppercase;
   height: 100px;
   padding: 0 30px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.header-hidden {
+  opacity: 0;
+  pointer-events: none; /* This ensures that the header isn't interactable when it's hidden */
 }
 
 /* Logo */
@@ -337,8 +343,8 @@ footer ul li a:hover {
 }
 
 /* Inner Pages */
-.bg-falcon-9 {
-  background-image: url('../img/falcon-9.webp');
+.bg-inferno-1 {
+  background-image: url('../img/inferno-1.webp');
 }
 
 .bg-falcon-heavy {

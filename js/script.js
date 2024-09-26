@@ -2,6 +2,8 @@ const btn = document.getElementById('menu-btn');
 const overlay = document.getElementById('overlay');
 const menu = document.getElementById('mobile-menu');
 const counters = document.querySelectorAll('.counter');
+const header = document.querySelector('.main-header');
+let lastScrollY = 0;
 let scrollStarted = false;
 
 btn.addEventListener('click', navToggle);
@@ -17,6 +19,17 @@ function navToggle() {
 function scrollPage() {
   const scrollPos = window.scrollY;
 
+  // Header fade out/in logic
+  if (scrollPos > lastScrollY) {
+    // Scrolling down
+    header.classList.add('header-hidden');
+  } else {
+    // Scrolling up
+    header.classList.remove('header-hidden');
+  }
+  lastScrollY = scrollPos;
+
+  // Counter logic
   if (scrollPos > 100 && !scrollStarted) {
     countUp();
     scrollStarted = true;
@@ -27,23 +40,16 @@ function scrollPage() {
 }
 
 function countUp() {
-  counters.forEach((counter) => {
+  counters.forEach(counter => {
     counter.innerText = '0';
 
     const updateCounter = () => {
-      // Get count target
       const target = +counter.getAttribute('data-target');
-      // Get current counter value
       const c = +counter.innerText;
-
-      // Create an increment
       const increment = target / 100;
 
-      // If counter is less than target, add increment
       if (c < target) {
-        // Round up and set counter value
         counter.innerText = `${Math.ceil(c + increment)}`;
-
         setTimeout(updateCounter, 75);
       } else {
         counter.innerText = target;
@@ -55,5 +61,5 @@ function countUp() {
 }
 
 function reset() {
-  counters.forEach((counter) => (counter.innerHTML = '0'));
+  counters.forEach(counter => (counter.innerHTML = '0'));
 }
