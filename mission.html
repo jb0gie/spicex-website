@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--
+  -- Spice Exploration Technologies Corp.
+  -- @version 1.0
+  -- @date 06.02.2020
+  -- @url https://spicex.vercel.app
+-->
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="css/style.css" />
+	<!-- <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" /> -->
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link rel="stylesheet" href="https://unpkg.com/tailwindcss@3.4.13/dist/base.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/tailwindcss@3.4.13/dist/components.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/@tailwindcss/typography@3.1.13/dist/typography.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/tailwindcss@3.4.13/dist/utilities.min.css">
+	<script>
+		tailwind.config = {
+			plugins: [require('@tailwindcss/typography')],
+		}
+	</script>
+	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+	<link rel="Shortcut Icon" type="image/ico" href="img/favicon.ico">
+	<meta property="og:title" content="SpiceX" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://spicex.vercel.app" />
+	<meta property="og:image" content="img/favicon.ico" />
+	<meta property="og:description" content="Spice Exploration Technologies Corp. an entrypoint probably emerging." />
+	<script src="js/script.js" defer></script>
+	<title>SpiceX</title>
+</head>
+
+<body>
+	<div id="overlay"></div>
+	<div id="mobile-menu" class="mobile-main-menu">
+		<ul>
+			<li class="mobile-only"><a href="inferno-one.html">Inferno 1</a></li>
+			<li><a href="./mission.html">Mission</a></li>
+			<li><a href="./support.html">Support</a></li>
+			<li><a href="#">Download</a></li>
+		</ul>
+	</div>
+	<header class="main-header">
+		<div class="logo">
+			<a href="index.html">
+				<img src="img/spicex.png" alt="SpiceX" />
+			</a>
+		</div>
+		<nav class="desktop-main-menu">
+			<ul>
+				<li><a href="inferno-one.html">Inferno 1</a></li>
+				<li><a href="./support.html">Support</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- Hamburger Menu -->
+	<button id="menu-btn" class="hamburger" type="button">
+		<span class="hamburger-top"></span>
+		<span class="hamburger-middle"></span>
+		<span class="hamburger-bottom"></span>
+	</button>
+
+	<div class="min-h-screen py-8 flex flex-col justify-center relative overflow-hidden lg:py-12"
+		style="background-image: url('boltpaper-bg.png'); background-repeat: repeat;">
+		<diva
+			class="relative w-full px-6 py-12 bg-white shadow-lg sm:rounded-3xl sm:p-20 bg-clip-padding shadow-slate-700/10 ring-1 ring-gray-900/5 md:max-w-3xl md:mx-auto lg:max-w-4xl lg:pt-16 lg:pb-28 bg-opacity-60 border border-gray-200"
+			style="backdrop-filter: blur(20px);">
+			<div class="max-w-prose mx-auto lg:text-lg">
+				<h1 class="mb-5 text-5xl text-center font-bold">
+					<span>SpiceX</span>
+				</h1>
+				<h2 class="mb-5 text-lg text-center">🌶️ <code>spicy~lunar lander</code></h2>
+			</div>
+			<div class="mt-8 prose prose-zinc mx-auto lg:prose-lg">
+				
+			</div>
+		</diva>
+	</div>
+
+	<footer>
+		<ul>
+			<li>🌶️ScovilleLabz🧪 an Entrypoint Partnership &copy; 20XX</li>
+			<!-- <li><a href="#">Twitter</a></li>
+        <li><a href="#">YouTube</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Flickr</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Suppliers</a></li> -->
+		</ul>
+	</footer>
+</body>
+
+</html>

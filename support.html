@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!--
+  -- Spice Exploration Technologies Corp.
+  -- @version 1.0
+  -- @date 06.02.2020
+  -- @url https://spicex.vercel.app
+-->
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="css/style.css" />
+	<!-- <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" /> -->
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link rel="stylesheet" href="https://unpkg.com/tailwindcss@3.4.13/dist/base.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/tailwindcss@3.4.13/dist/components.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/@tailwindcss/typography@3.1.13/dist/typography.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/tailwindcss@3.4.13/dist/utilities.min.css">
+	<script>
+		tailwind.config = {
+			plugins: [require('@tailwindcss/typography')],
+		}
+	</script>
+	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+	<link rel="Shortcut Icon" type="image/ico" href="img/favicon.ico">
+	<meta property="og:title" content="SpiceX" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://spicex.vercel.app" />
+	<meta property="og:image" content="img/favicon.ico" />
+	<meta property="og:description" content="Spice Exploration Technologies Corp. an entrypoint probably emerging." />
+	<script src="js/script.js" defer></script>
+	<title>SpiceX</title>
+</head>
+
+<body>
+	<div id="overlay"></div>
+	<div id="mobile-menu" class="mobile-main-menu">
+		<ul>
+			<li class="mobile-only"><a href="inferno-one.html">Inferno 1</a></li>
+			<li><a href="./mission.html">Mission</a></li>
+			<li><a href="./support.html">Support</a></li>
+			<li><a href="#">Download</a></li>
+		</ul>
+	</div>
+	<header class="main-header">
+		<div class="logo">
+			<a href="index.html">
+				<img src="img/spicex.png" alt="SpiceX" />
+			</a>
+		</div>
+		<nav class="desktop-main-menu">
+			<ul>
+				<li><a href="inferno-one.html">Inferno 1</a></li>
+				<li><a href="./support.html">Support</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- Hamburger Menu -->
+	<button id="menu-btn" class="hamburger" type="button">
+		<span class="hamburger-top"></span>
+		<span class="hamburger-middle"></span>
+		<span class="hamburger-bottom"></span>
+	</button>
+
+	<div class="min-h-screen py-8 flex flex-col justify-center relative overflow-hidden lg:py-12"
+		style="background-image: url('boltpaper-bg.png'); background-repeat: repeat;">
+		<header class="text-center mb-8">
+			<h1 class="text-4xl font-bold">Support</h1>
+			<p class="text-lg mt-4">We’re here to assist with game support, technical issues, and feedback.</p>
+		</header>
+		<div
+			class="relative w-full px-6 py-12 bg-white shadow-lg sm:rounded-3xl sm:p-20 bg-clip-padding shadow-slate-700/10 ring-1 ring-gray-900/5 md:max-w-3xl md:mx-auto lg:max-w-4xl lg:pt-16 lg:pb-28 bg-opacity-60 border border-gray-200"
+			style="backdrop-filter: blur(20px);">
+			<div class="max-w-prose mx-auto lg:text-lg">
+			</div>
+			<div class="mt-8 prose prose-zinc mx-auto lg:prose-lg">
+				<!-- General Support -->
+				<h2 class="text-2xl font-semibold text-gray-800">🚀 General Support</h2>
+				<p class="text-gray-700 mt-4">Have questions about our games, releases, or the SPICEX community? Check out the
+					FAQs below.</p>
+				<ul class="list-disc list-inside mt-4 space-y-2 text-blue-600">
+					<li><a href="#">General FAQs</a></li>
+					<li><a href="#">Game Updates</a></li>
+					<li><a href="#">Installation/Download Help</a></li>
+					<li><a href="#">Account Issues</a></li>
+				</ul>
+				<br />
+				<!-- Technical Support -->
+				<h2 class="text-2xl font-semibold text-gray-800">🛠️ Technical Support</h2>
+				<p class="text-gray-700 mt-4">Having trouble while playing? Let’s get it sorted:</p>
+				<ol class="list-decimal list-inside mt-4 space-y-2 text-blue-600">
+					<li><a href="#">Check System Requirements</a></li>
+					<li><a href="#">Patches & Updates</a></li>
+					<li><a href="#">Bug Report Form</a></li>
+				</ol>
+				<p class="text-gray-700 mt-4">If the above doesn’t resolve your issue, feel free to contact us directly using
+					the form below.</p>
+				<br />
+				<!-- Feedback & Suggestions -->
+				<h2 class="text-2xl font-semibold text-gray-800">📢 Feedback & Suggestions</h2>
+				<p class="text-gray-700 mt-4">Got feedback or ideas for future updates? We’d love to hear from you!</p>
+				<a href="#" class="mt-4 inline-block text-blue-600">Submit Feedback</a>
+				<br />
+				<br />
+				<!-- Community & Forums -->
+				<h2 class="text-2xl font-semibold text-gray-800">🌐 Community & Forums</h2>
+				<p class="text-gray-700 mt-4">Join the conversation with other players. Share tips, discuss strategies, and stay
+					updated on the latest SPICEX news.</p>
+				<ul class="list-disc list-inside mt-4 space-y-2 text-blue-600">
+					<li><a href="#">Visit the Forums</a></li>
+					<li><a href="#">Community Guidelines</a></li>
+				</ul>
+				<br />
+				<!-- Contact Us -->
+				<h2 class="text-2xl font-semibold text-gray-800">📞 Contact Us</h2>
+				<p class="text-gray-700 mt-4">Still need help? Reach out to us:</p>
+				<p class="text-gray-700 mt-2"><strong>Email:</strong> <a href="mailto:support@spicexgames.com"
+						class="text-blue-600">support@spicexgames.com</a></p>
+				<p class="text-gray-700 mt-2"><strong>Support Hours:</strong> Monday–Friday, 9 AM–6 PM (PST)</p>
+				<a href="#" class="mt-4 inline-block text-blue-600">Contact Form</a>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<ul>
+			<li>🌶️ScovilleLabz🧪 an Entrypoint Partnership &copy; 20XX</li>
+			<!-- <li><a href="#">Twitter</a></li>
+        <li><a href="#">YouTube</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Flickr</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Suppliers</a></li> -->
+		</ul>
+	</footer>
+</body>
+
+</html>
